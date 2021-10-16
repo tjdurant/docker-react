@@ -12,7 +12,7 @@ CMD npm run build
 
 # Run phase block
 FROM nginx
-EXPOSE 80
+# EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # default command for nginx is to start nginx. so, no CMD needed
